@@ -30,7 +30,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --no-frozen-lockfile
       - name: Build Quartz
-        run: npx quartz build
+        run: pnpm exec quartz build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
