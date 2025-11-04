@@ -28,9 +28,9 @@ jobs:
         with:
           version: latest
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm approve-builds --g && pnpm install --frozen-lockfile
       - name: Build Quartz
-        run: pnpm approve-builds --g && pnpm exec quartz build
+        run: pnpm run quartz build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
