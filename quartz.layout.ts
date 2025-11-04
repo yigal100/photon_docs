@@ -24,7 +24,7 @@ export const sharedPageComponents: SharedLayout = {
     }),
   ], footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/yigall100/photon_docs"
+      GitHub: "https://github.com/yigal100/photon_docs"
     },
   }),
 }

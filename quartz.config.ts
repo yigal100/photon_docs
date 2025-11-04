@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "https://yigal100.github.io/photon_docs/",
     ignorePatterns: ["private", "templates", ".obsidian", "**/drafts", "**/Drafts"],
     defaultDateType: "modified",
     theme: {
