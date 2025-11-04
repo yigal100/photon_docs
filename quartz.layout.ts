@@ -5,8 +5,24 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
-  footer: Component.Footer({
+  afterBody: [
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        // from data-repo
+        repo: 'yigal100/photon_docs',
+        // from data-repo-id
+        repoId: 'R_kgDOQOwX7w',
+        // from data-category
+        category: 'Announcements',
+        // from data-category-id
+        categoryId: 'DIC_kwDOQOwX784CxacN',
+        // from data-lang
+        lang: 'en',
+        inputPosition: "top",
+      }
+    }),
+  ], footer: Component.Footer({
     links: {
       GitHub: "https://github.com/yigall100/photon_docs"
     },
@@ -39,7 +55,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer(),
     Component.RecentNotes({
-       limit: 5,
+      limit: 5,
     }),
   ],
   right: [
